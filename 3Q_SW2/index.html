@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>🧮Calculator🧮</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+   	body {
+   		background-color: skyblue;
+   	}
+		.box {
+	background-color: lightgray;
+	padding: 10px;
+	border: 1px solid #ce93d8 rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 335px;
+	margin-right: 335px;
+	class: center;
+	font-family: consolas;
+   }
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="box">
+		<script>
+			var a = 1;
+			var b = 1;
+			document.write('<h2>🧮Calculator🧮</h2>'+'<h4>This is a calculator.</h4>');
+		</script>
+		<h4> 🌟Type in two variables (a and b) then press a button to calculate.🌟</h4>
+		<form>
+			<label>A=</label>
+			<input type="number" id="no1" placeholder="Type input for (a)."><br>
+			<label>B=</label>
+			<input type="number" id="no2" placeholder="Type input for (b).">
+		</form>
+		<h4 class="text-success">🟰Answer will show below.🟰</h4>
+
+		<h5 id="Calc">>>Answer<<</h5><br>
+		<div class="row">
+		<button class="btn btn-success" type="button" onclick="var a = document.getElementById('no1').value; var b = document.getElementById('no2').value; document.getElementById('Calc').innerHTML ='The product of a and b is: ' + a*b ;">Multiply</button>
+		<button class="btn btn-warning" type="button" onclick="var a = document.getElementById('no1').value; var b = document.getElementById('no2').value; document.getElementById('Calc').innerHTML ='a raised to b is: ' + a**b ;">a raised to b</button>
+	    </div>
+        <br>
+	    <div class="row">
+		<button class="btn btn-danger " type="button" onclick="var a = document.getElementById('no1').value; var b = document.getElementById('no2').value; document.getElementById('Calc').innerHTML ='The remainder of a and b is: ' + a%b ;">Remainder</button>
+		<button class="btn btn-primary" type="button" onclick="var a = document.getElementById('no1').value; var b = document.getElementById('no2').value; var c = a==b; document.getElementById('Calc').innerHTML ='Is a and b are equal?: ' + c ;">check if equal</button>
+	    </div>
+      <br><br>
+		<a type="button" class="btn btn-info" href="index.html">🔃RESET🔃</a><br>
+		</div>
+	</div>
+
+
+</body>
+</html>

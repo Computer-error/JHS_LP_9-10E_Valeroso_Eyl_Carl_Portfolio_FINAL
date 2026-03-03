@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GWA Finder</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"; rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<style>
+		.box {
+	background-image: url(p.png);
+	padding: 0px;
+	border: 1px solid #ce93d8 rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 135px;
+	margin-right: 135px;
+	background-position: center;
+    }
+	.s {
+	background-image: url("sci.png");
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 135px;
+	margin-right: 135px;
+	background-position: center;	
+	}
+	.e {
+	background-image: url("eng.png");
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 135px;
+	margin-right: 135px;
+	background-position: center;	
+	}
+	.m {
+	background-image: url("mat.png");
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 135px;
+	margin-right: 135px;
+	background-position: center;	
+	}
+	.f {
+	background-image: url("fil.png");
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 135px;
+	margin-right: 135px;
+	background-position: center;	
+	}
+	.ss {
+	background-image: url("soc.png");
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 135px;
+	margin-right: 135px;
+	background-position: center;	
+	}
+	   body {
+	background-image: url("back.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+    }	
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+		<h1>🏫Compute your scores!🏫</h1>
+		<p>✨Enter your grades in each of these subjects.<br>
+		📄These grades are found in your report card if you dont know.</p>
+		<div class="s">
+		<h4>Science</h4>
+		<input type="number" class="btn-form-control" placeholder="Enter grade." min="60" max="100" id="sci">
+	    </div>		
+		<div class="m">
+		<h4>Math</h4>
+		<input type="number" class="btn-form-control" placeholder="Enter grade." min="60" max="100" id="mat">
+	    </div>
+		<div class="e">
+		<h4>English</h4>
+		<input type="number" class="btn-form-control" placeholder="Enter grade." min="60" max="100" id="eng">
+	    </div>
+	    <div class="f">
+		<h4>Filipino</h4>
+		<input type="number" class="btn-form-control" placeholder="Enter grade." min="60" max="100" id="fil">
+	    </div>
+	    <div class="ss">
+		<h4>Social Studies</h4>
+		<input type="number" class="btn-form-control" placeholder="Enter grade." min="60" max="100" id="SocSci">
+	    </div><br>
+		<button type="button" class="btn btn-success" onclick="time()">calculate</button>
+        <br><br>
+		<h4 style="background-color: white;" id="rev">your grade is...</h4>
+        </div>
+    </div>
+    <script>
+    	function time() {
+    	var e = parseInt(document.getElementById("eng").value);
+    	var m = parseInt(document.getElementById("mat").value);
+    	var s = parseInt(document.getElementById("sci").value);
+    	var h = parseInt(document.getElementById("SocSci").value);
+    	var f = parseInt(document.getElementById("fil").value);
+    	var Grade = Math.round((s+m+e+h+f)/5);
+    	switch (Grade){
+    	case 60, 61, 62, 63, 64, 65, 66, 67, 68, 69:
+    		GenAvg = ", F for Failing";
+    		break;
+    	case 70, 71, 72, 73, 74:
+    		GenAvg = ", P for poor";
+    		break;
+    	case 75, 76, 77, 78, 79:
+    		GenAvg = ", NI for Needs Improvment";
+    		break;
+    	case 80, 81, 82, 83, 84, 85, 86:
+    		GenAvg = ", S for Standard";
+    		break;
+    	case 87, 88, 89, 90, 91, 92, 93:
+    		GenAvg = ", AS for Above standard";
+    		break;
+    	case 94, 95, 96, 97, 98, 99, 100:
+    		GenAvg = ", E for Exelent!";
+    		break;
+    	default:
+    		GenAvg = ", which is inavlid, please enter a number from 60 to 100 from your Report Card!";					
+        }
+        document.getElementById("rev").innerHTML = "Your grade is " + Grade + GenAvg;
+    	}
+    </script>
+</body>
+</html>

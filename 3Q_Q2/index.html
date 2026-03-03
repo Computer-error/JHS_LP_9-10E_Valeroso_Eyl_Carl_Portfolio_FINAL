@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>🎫Ticket Booth🎫</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+   	    body {
+   		background-image: url("bg.png");
+	      background-attachment: fixed;
+	      background-repeat: ;
+	      background-size: 1000%;
+	      text-align: center;
+	      font-family: cursive;
+	      background-position: center;
+	      ba
+   }	
+       .smolbox {
+	background-color: coral;
+	padding: 10px;
+	border: 1px solid #ce93d8 rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 300px;
+	margin-right: 300px;
+	class: center;
+	font-family: cursive;
+   }
+	</style>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="container">
+			<script type="text/javascript">
+			</script>
+			<h2 class="text-success" style="background-color: lightgray; margin-top: 20px; margin-left: 125px; margin-right: 125px; border-radius: 8px;;">🎟️🎫TICKET BOOTH🎫🎟️</h2>
+			<div class="smolbox">
+			<details ontoggle="message()">
+				<summary style="background-color: lightgray; border-radius: 8px;">1: Personal Info</summary>
+				<p>Enter your info.</p>
+        		<form>
+    			<div class="col">
+				<label>Name:</label>
+				<input type="text" id="name" placeholder="Name"><br><br>
+				<label>Email:</label>
+				<input type="email" id="mail" placeholder="Email"><br><br>
+			    <button type="button" class="btn btn-danger" onclick="window.alert('Successfully saved info!');">Submit</button>
+			    </form>
+			    </div>
+			</details>
+		    </div>
+
+			<div class="smolbox">
+			<details ontoggle="message()">
+				<summary style="background-color: lightgray; border-radius: 8px;">2: Ticket Pricing</summary>
+				<p>Check the price of your ticket.</p>
+				<form>
+    			<label>Choose your seat:</label>
+    			<select class="form-select" id="seat">
+    				<option value="none">Select</option>
+    				<option value="2250">First Row seats</option>
+    				<option value="1500">Elevated Row seats</option>
+    				<option value="1000">Basic seat</option>
+    				<option value="750">Back Row seats</option>
+    			</select><br><br>
+    			<label>Choose your option:</label>
+    			<select class="form-select" id="disc">
+    				<option value="none">Select</option>
+    				<option value="1.5">Premium seats</option>
+    				<option value="0.9">PWD seats</option>
+    				<option value="0.8">Kids seats</option>
+    			</select><br><br>
+    			<label>Amount of people:</label>
+				<input type="number" id="man" placeholder="Enter amount"><br><br>
+    			<p id="pric"></p>
+    			<button class="btn btn-danger" type="button" onclick="var a = document.getElementById('seat').value; var b = document.getElementById('disc').value; var c = document.getElementById('man').value; var d = a*b; var e = d*c; window.alert('The price of your seat is: ₱'+ e +', successfully saved!');">Show Price</button>
+    		    </form>
+			</details>
+		    </div>
+
+		    <div class="smolbox">
+			<details ontoggle="message()">
+				<summary style="background-color: lightgray; border-radius: 8px;">3: Printing</summary>
+				<p>Print your ticket.</p><br>
+				<img src="tix.png" width="338" height="138" alt="Your ticket is ready!"><br><br>
+				<button type="button" class="btn btn-danger" onclick="window.alert('Ticket has been sent to your email and its ready for printing!');">Print</button><br><br>
+				<a type="button" class="btn btn-info" href="index.html">Buy another!</a><br>
+			</details>
+		    </div>
+		</div>
+	</div>
+
+
+</body>
+</html>

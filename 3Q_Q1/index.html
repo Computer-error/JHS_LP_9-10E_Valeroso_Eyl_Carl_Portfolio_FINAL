@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>0perators</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+   	body {
+   		background-image: url("no.png");
+	      background-attachment: fixed;
+	      background-repeat: no-repeat;
+	      background-size: 100%;
+   	}
+		.box {
+	background-color: lightgray;
+	padding: 10px;
+	border: 1px solid #ce93d8 rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 335px;
+	margin-right: 335px;
+	class: center;
+	font-family: consolas;
+   }
+
+   .boxhead {
+	background-color: darkgray;
+	padding: 0px;
+	border: 1px solid #ce93d8 rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	font-family: monospace;
+	margin-top: 20px;
+	margin-left: 335px;
+	margin-right: 335px;
+	
+
+	</style>
+</head>
+<body>
+	<div class="boxhead">
+		<h4 class="info">⭐You can set your Variables, compute for the ff.⭐</h4>
+	</div>
+	<div class="container-fluid">
+		<div class="box">
+		<script>
+			var a = 20;
+			var b = 5;
+			document.write('<h4>These are operators, they will automatically solve the problem using the given variables above.</h4>');
+		</script>
+		<h4> Enter your variables</h4>
+		<form>
+			<label>A=</label>
+			<input type="number" id="no1" placeholder="Type here, try 20.">
+			<label>B=</label>
+			<input type="number" id="no2" placeholder="Type here, try 5.">
+		</form>
+		<h3 class="text-danger">1: Arithmetic</h3>
+
+		<p id="Arithmetic">1a:<br>1b:</p>
+		<button class="btn btn-danger" type="button" onclick="var a = document.getElementById('no1').value; var b = document.getElementById('no2').value; var c = a%b; document.getElementById('Arithmetic').innerHTML ='1a: Exponent:' + a**b + '<br>1b: Modulus:' + c;">Show ans.</button>
+
+		<h3 class="text-primary">2: Comparison</h3>
+
+		<p id="Comparison">2a:<br>2b:</p>
+		<button class="btn btn-primary" type="button" onclick="var a2 = document.getElementById('no1').value; var b2 = document.getElementById('no2').value; var c2 = a2>b2; var d2 = a2==b2; document.getElementById('Comparison').innerHTML ='2a: Is a greater than b:' + c2 + '<br>2b: Is a equal to b:' + d2;">Show ans.</button>
+
+		<h3 class="text-success">3: Logical</h3>
+
+		<p id="Logical">3a:<br>3b:</p>
+		<button class="btn btn-success" type="button" onclick="var a3 = document.getElementById('no1').value; var b3 = document.getElementById('no2').value; var c3 = (a3<=b3)&&(a3>=b3); var d3 =(a3!=b3)||(a3==b3); document.getElementById('Logical').innerHTML ='<p>3a: (a <= b) && (a >= b):' + c3 + '<br>3b: (a != b) || (a == b):' + d3;">Show ans.</button>
+      <br><br>
+		<a type="button" class="btn btn-info" href="index.html">🔃RESET🔃</a><br>
+		</div>
+	</div>
+
+
+</body>
+</html>

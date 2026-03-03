@@ -1,0 +1,199 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"al",
+				"alt"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/valer/Downloads/Valeroso/1st web.html",
+		"/C/Users/valer/Downloads/Valeroso/style.css",
+		"/C/Users/valer/Downloads/Valeroso/project.html",
+		"/C/Users/valer/Downloads/Valeroso/ray.html",
+		"/C/Users/valer/Downloads/Valeroso/gold.html",
+		"/C/Users/valer/Downloads/Valeroso/arrow.html",
+		"/C/Users/valer/Downloads/Valeroso/cat.html",
+		"/C/Users/valer/Downloads/Valeroso/cichlid.html",
+		"/C/Users/valer/Downloads/Valeroso/item.html",
+		"/C/Users/valer/Downloads/Valeroso/output.js",
+		"/C/Users/valer/Downloads/LP_ICT9Emerald_Q1SW1_Valeroso_Eyl_Carl.html",
+		"/C/Users/valer/Downloads/Synthesia-10.9/Synthesia-10.9/readme.html",
+		"/C/Users/valer/Downloads/Valeroso/event.html",
+		"/C/Users/valer/Downloads/LP_ICT9Emerald_Q1SW2_Valeroso_Eyl_Carl/create.html",
+		"/C/Users/valer/Downloads/LP_ICT9Emerald_Q1SW2_Valeroso_Eyl_Carl/index.html",
+		"/C/Users/valer/Downloads/New folder/ICT9Emerald_Q1Quiz1_Valeroso, Eyl Carl.html",
+		"/C/Users/valer/Downloads/ICT9Emerald_Q1Quiz1_Valeroso, Eyl Carl.html",
+		"/C/Users/valer/OneDrive/Desktop/eyl/Eyl.html",
+		"/C/Users/valer/Downloads/Valeroso/cichlids.png",
+		"/C/Users/valer/Downloads/Valeroso/info.html",
+		"/C/Users/valer/Downloads/Valeroso/index.html",
+		"/C/Users/valer/Downloads/Valeroso/create.html",
+		"/C/Users/valer/Downloads/1st web.html",
+		"/C/Users/valer/Downloads/Valeroso/index - Copy.html",
+		"/C/Users/valer/Downloads/Valeroso/LastBreath.html",
+		"/C/Users/valer/Downloads/Valeroso/catfish.png",
+		"/C/Users/valer/Downloads/New folder/index.html",
+		"/C/Users/valer/Downloads/New folder/style.css",
+		"/C/Users/valer/Downloads/dd.html"
+	],
+	"find":
+	{
+		"height": 59.2
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 59.2
+	},
+	"input":
+	{
+		"height": 59.2
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 116.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
